@@ -1,0 +1,75 @@
+{
+  "uid" : "81d568a364c80e5",
+  "name" : "test_login_success",
+  "fullName" : "testcases.sys.test_sys_login.Test_login#test_login_success",
+  "historyId" : "685c921f5afb3e7bfbb279594c0c880f",
+  "time" : {
+    "start" : 1586747455973,
+    "stop" : 1586747455973,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'object'",
+  "statusTrace" : "@pytest.fixture(scope='session',autouse=True)\n    def session_fixture():\n        path=\"/api/auth/login\"\n        data={'username':CommonData.mobile,\n              'password':CommonData.password}\n        resp=http.post(path,data)\n>       CommonData.token=resp['object']['token']\nE       KeyError: 'object'\n\nconftest.py:12: KeyError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "session_fixture",
+    "time" : {
+      "start" : 1586747455975,
+      "stop" : 1586747456092,
+      "duration" : 117
+    },
+    "status" : "broken",
+    "statusMessage" : "KeyError: 'object'\n",
+    "statusTrace" : "  File \"C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\fixtures.py\", line 964, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\fixtures.py\", line 792, in call_fixture_func\n    res = fixturefunc(**kwargs)\n  File \"D:\\pydemo\\pyzy\\conftest.py\", line 12, in session_fixture\n    CommonData.token=resp['object']['token']\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录成功"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.sys"
+  }, {
+    "name" : "suite",
+    "value" : "test_sys_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-UB0GBA7"
+  }, {
+    "name" : "thread",
+    "value" : "26976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.sys.test_sys_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81d568a364c80e5.json",
+  "parameterValues" : [ ]
+}

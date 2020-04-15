@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "KeyError: 'object'",
+      "children" : [ {
+        "name" : "test_login_success",
+        "uid" : "8f1a2e0470b9ff68",
+        "parentUid" : "daee13d97c035ff5ad1a254b443bc615",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586747695538,
+          "stop" : 1586747695538,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_fail",
+        "uid" : "c188c95cfd2dba35",
+        "parentUid" : "daee13d97c035ff5ad1a254b443bc615",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586747695751,
+          "stop" : 1586747695751,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "daee13d97c035ff5ad1a254b443bc615"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
